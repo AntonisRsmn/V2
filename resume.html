@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Βιογραφικό - Στεφανία Δράκου</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <style>
       body {
         font-family: "Georgia", serif;
@@ -125,49 +128,49 @@
       }
 
       @media (max-width: 767.98px) {
-      .navbar-collapse {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 75%;
-        height: 100vh;
-        background-color: #f8f4ec; /* Updated beige */
-        padding: 2rem;
-        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-        transition: right 0.3s ease-in-out;
-        z-index: 999;
-      }
+        .navbar-collapse {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 75%;
+          height: 100vh;
+          background-color: #f8f4ec; /* Updated beige */
+          padding: 2rem;
+          box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+          transition: right 0.3s ease-in-out;
+          z-index: 999;
+        }
 
-      .navbar-collapse.show {
-        right: 0;
-      }
+        .navbar-collapse.show {
+          right: 0;
+        }
 
-      .navbar-toggler {
-        border-color: transparent;
-        z-index: 1001;
-      }
+        .navbar-toggler {
+          border-color: transparent;
+          z-index: 1001;
+        }
 
-      /* Toggler icon - default white */
-      .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        transition: background-image 0.3s ease-in-out;
-      }
+        /* Toggler icon - default white */
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          transition: background-image 0.3s ease-in-out;
+        }
 
-      /* Toggler icon - black when menu is open */
-      .navbar-collapse.show ~ .navbar-toggler .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-      }
+        /* Toggler icon - black when menu is open */
+        .navbar-collapse.show ~ .navbar-toggler .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
 
-      .navbar-nav {
-        flex-direction: column;
-        gap: 1.5rem;
-      }
+        .navbar-nav {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
 
-      .nav-link {
-        color: #333 !important;
-        font-size: 1.2rem;
+        .nav-link {
+          color: #333 !important;
+          font-size: 1.2rem;
+        }
       }
-    }
     </style>
   </head>
   <body>
@@ -177,17 +180,29 @@
         <a class="navbar-brand" href="index.html">Στεφανία Δράκου</a>
 
         <!-- CUSTOM TOGGLER BUTTON -->
-        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon white"></span>
         </button>
 
         <!-- CUSTOM COLLAPSIBLE MENU -->
         <div class="navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Αρχική</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Υπηρεσίες</a></li>
-            <li class="nav-item"><a class="nav-link" href="approach.html">Προσέγγιση</a></li>
-            <li class="nav-item"><a class="nav-link" href="resume.html">Βιογραφικό</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Αρχική</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Υπηρεσίες</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="approach.html">Προσέγγιση</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Βιογραφικό</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -202,24 +217,46 @@
             <h5>Δράκου Στεφανία</h5>
             <p><strong>Ψυχολόγος - Ψυχοθεραπεύτρια</strong></p>
             <p>
-              Είμαι απόφοιτος Ψυχολογίας από το DEREE (American College of Greece), με διεθνή αναγνώριση και πιστοποίηση από το Open University. Κατέχω άδεια ασκήσεως επαγγέλματος Ψυχολόγου: 844955-07/07/23 και έχω ειδικευτεί στη Γνωσιακή Συμπεριφορική Θεραπεία (CBT), μια προσέγγιση που έχει αποδειχθεί αποτελεσματική για την αντιμετώπιση διαφόρων ψυχολογικών ζητημάτων.
+              Είμαι απόφοιτος Ψυχολογίας από το DEREE (American College of
+              Greece), με διεθνή αναγνώριση και πιστοποίηση από το Open
+              University. Κατέχω άδεια ασκήσεως επαγγέλματος Ψυχολόγου:
+              844955-07/07/23 και έχω ειδικευτεί στη Γνωσιακή Συμπεριφορική
+              Θεραπεία (CBT), μια προσέγγιση που έχει αποδειχθεί αποτελεσματική
+              για την αντιμετώπιση διαφόρων ψυχολογικών ζητημάτων.
             </p>
             <p>
-              Η εκπαίδευσή μου στη Ψυχολογία, σε συνδυασμό με τις σπουδές μου στην Υποκριτική στην Ανώτερη Δραματική Σχολή του Γ. Θεοδοσιάδη, έχει εμπλουτίσει την κατανόηση της ανθρώπινης συμπεριφοράς και των συναισθημάτων. Αυτή η μοναδική συνδυαστική προσέγγιση μου επιτρέπει να προσεγγίζω τους πελάτες με ενσυναίσθηση και κατανόηση.
+              Η εκπαίδευσή μου στη Ψυχολογία, σε συνδυασμό με τις σπουδές μου
+              στην Υποκριτική στην Ανώτερη Δραματική Σχολή του Γ. Θεοδοσιάδη,
+              έχει εμπλουτίσει την κατανόηση της ανθρώπινης συμπεριφοράς και των
+              συναισθημάτων. Αυτή η μοναδική συνδυαστική προσέγγιση μου
+              επιτρέπει να προσεγγίζω τους πελάτες με ενσυναίσθηση και
+              κατανόηση.
             </p>
 
             <h5 class="mt-4">Επαγγελματική Εμπειρία</h5>
             <ul>
-              <li>Ψυχοθεραπεύτρια σε ιδιωτική πρακτική, όπου παρέχω ατομικές συνεδρίες σε ενηλίκους</li>
-              <li>Συνεργασία με επιχειρήσεις για την υποστήριξη της ψυχικής υγείας των εργαζομένων, προσφέροντας εργαστήρια και σεμινάρια</li>
+              <li>
+                Ψυχοθεραπεύτρια σε ιδιωτική πρακτική, όπου παρέχω ατομικές
+                συνεδρίες σε ενηλίκους
+              </li>
+              <li>
+                Συνεργασία με επιχειρήσεις για την υποστήριξη της ψυχικής υγείας
+                των εργαζομένων, προσφέροντας εργαστήρια και σεμινάρια
+              </li>
             </ul>
 
             <h5 class="mt-4">Προσέγγιση</h5>
             <p>
-              Πιστεύω στη μοναδικότητα κάθε ατόμου και προσαρμόζω τις μεθόδους μου στις ανάγκες του κάθε πελάτη. Στόχος μου είναι να δημιουργήσω ένα ασφαλές και υποστηρικτικό περιβάλλον, όπου οι πελάτες μπορούν να εξερευνήσουν τις σκέψεις και τα συναισθήματά τους.
+              Πιστεύω στη μοναδικότητα κάθε ατόμου και προσαρμόζω τις μεθόδους
+              μου στις ανάγκες του κάθε πελάτη. Στόχος μου είναι να δημιουργήσω
+              ένα ασφαλές και υποστηρικτικό περιβάλλον, όπου οι πελάτες μπορούν
+              να εξερευνήσουν τις σκέψεις και τα συναισθήματά τους.
             </p>
 
-            <p>Εξειδικεύομαι σε προβλήματα άγχους και συναισθηματικές διαταραχές, καθώς και σε προβλήματα σχέσεων.</p>
+            <p>
+              Εξειδικεύομαι σε προβλήματα άγχους και συναισθηματικές διαταραχές,
+              καθώς και σε προβλήματα σχέσεων.
+            </p>
             <ul>
               <li>Συναισθηματικές Διαταραχές</li>
               <li>Διαταραχή Πανικού & Αγοραφοβία</li>
@@ -234,58 +271,69 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer" style="background-color: #f4f1ed; padding: 40px 0; text-align: center;">
+    <footer
+      id="footer"
+      style="background-color: #f4f1ed; padding: 40px 0; text-align: center"
+    >
       <div class="container">
-        <h5 style="font-family: 'Georgia', serif; font-weight: 500; color: #6e6e7a; margin-bottom: 20px;">
+        <h5
+          style="
+            font-family: 'Georgia', serif;
+            font-weight: 500;
+            color: #6e6e7a;
+            margin-bottom: 20px;
+          "
+        >
           Επικοινωνία
         </h5>
-        <p style="color: #555; font-size: 1.05rem; margin-bottom: 8px;">
+        <p style="color: #555; font-size: 1.05rem; margin-bottom: 8px">
           📧 drakou.stef@gmail.com
-
         </p>
-        <p style="color: #555; font-size: 1.05rem;">
-          📞 +30 698 988 5396
+        <p style="color: #555; font-size: 1.05rem">📞 +30 698 988 5396</p>
+        <hr style="max-width: 200px; margin: 30px auto; border-color: #ccc" />
+        <p style="color: #aaa; font-size: 0.9rem">
+          &copy; 2025 Στεφανία Δράκου. Website by
+          <a
+            href="https://rusman.gr"
+            target="_blank"
+            style="color: #000000; text-decoration: none"
+            >Antonios Rusman</a
+          >.
         </p>
-        <hr style="max-width: 200px; margin: 30px auto; border-color: #ccc;" />
-        <p style="color: #aaa; font-size: 0.9rem;">
-  &copy; 2025 Στεφανία Δράκου. Website by 
-  <a href="https://rusman.gr" target="_blank" style="color: #000000; text-decoration: none;">Antonios Rusman</a>.
-</p>
-
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-      const toggler = document.querySelector('.navbar-toggler');
-      const icon = toggler.querySelector('.navbar-toggler-icon');
-      const menu = document.getElementById('navbarNav');
+      const toggler = document.querySelector(".navbar-toggler");
+      const icon = toggler.querySelector(".navbar-toggler-icon");
+      const menu = document.getElementById("navbarNav");
 
       // Default: closed
-      icon.classList.add('black');
+      icon.classList.add("black");
 
-      toggler.addEventListener('click', () => {
-        const isOpen = menu.classList.contains('show');
+      toggler.addEventListener("click", () => {
+        const isOpen = menu.classList.contains("show");
 
         if (!isOpen) {
-          menu.classList.add('show');
-          icon.classList.remove('black');
-          icon.classList.add('black');
+          menu.classList.add("show");
+          icon.classList.remove("black");
+          icon.classList.add("black");
         } else {
-          menu.classList.remove('show');
-          icon.classList.remove('black');
-          icon.classList.add('black');
+          menu.classList.remove("show");
+          icon.classList.remove("black");
+          icon.classList.add("black");
         }
       });
 
       // Optional: close menu if you click outside of it
-      document.addEventListener('click', (e) => {
+      document.addEventListener("click", (e) => {
         if (!menu.contains(e.target) && !toggler.contains(e.target)) {
-          if (menu.classList.contains('show')) {
-            menu.classList.remove('show');
-            icon.classList.remove('black');
-            icon.classList.add('black');
+          if (menu.classList.contains("show")) {
+            menu.classList.remove("show");
+            icon.classList.remove("black");
+            icon.classList.add("black");
           }
         }
       });

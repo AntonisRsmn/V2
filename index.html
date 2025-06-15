@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="cv-photo.webp">
+    <link rel="icon" type="image/x-icon" href="cv-photo.webp" />
     <title>Στεφανία Δράκου</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -44,7 +44,6 @@
         z-index: -1;
       }
 
-
       .navbar-custom {
         background: transparent;
         position: absolute;
@@ -52,7 +51,6 @@
         width: 100%;
         z-index: 1000;
       }
-
 
       .navbar-custom .nav-link,
       .navbar-custom .navbar-brand {
@@ -78,53 +76,52 @@
         .hero-section p {
           font-size: 1.5rem;
         }
-
       }
 
-     @media (max-width: 767.98px) {
-      .navbar-collapse {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 75%;
-        height: 100vh;
-        background-color: #f8f4ec; /* Updated beige */
-        padding: 2rem;
-        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-        transition: right 0.3s ease-in-out;
-        z-index: 999;
-      }
+      @media (max-width: 767.98px) {
+        .navbar-collapse {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 75%;
+          height: 100vh;
+          background-color: #f8f4ec; /* Updated beige */
+          padding: 2rem;
+          box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+          transition: right 0.3s ease-in-out;
+          z-index: 999;
+        }
 
-      .navbar-collapse.show {
-        right: 0;
-      }
+        .navbar-collapse.show {
+          right: 0;
+        }
 
-      .navbar-toggler {
-        border-color: transparent;
-        z-index: 1001;
-      }
+        .navbar-toggler {
+          border-color: transparent;
+          z-index: 1001;
+        }
 
-      /* Toggler icon - default white */
-      .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        transition: background-image 0.3s ease-in-out;
-      }
+        /* Toggler icon - default white */
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          transition: background-image 0.3s ease-in-out;
+        }
 
-      /* Toggler icon - black when menu is open */
-      .navbar-collapse.show ~ .navbar-toggler .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-      }
+        /* Toggler icon - black when menu is open */
+        .navbar-collapse.show ~ .navbar-toggler .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
 
-      .navbar-nav {
-        flex-direction: column;
-        gap: 1.5rem;
-      }
+        .navbar-nav {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
 
-      .nav-link {
-        color: #333 !important;
-        font-size: 1.2rem;
+        .nav-link {
+          color: #333 !important;
+          font-size: 1.2rem;
+        }
       }
-    }
 
       .section-title {
         font-weight: 600;
@@ -220,7 +217,6 @@
           background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
       }
-
     </style>
   </head>
   <body>
@@ -230,17 +226,29 @@
         <a class="navbar-brand" href="index.html">Στεφανία Δράκου</a>
 
         <!-- CUSTOM TOGGLER BUTTON -->
-        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon white"></span>
         </button>
 
         <!-- CUSTOM COLLAPSIBLE MENU -->
         <div class="navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Αρχική</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Υπηρεσίες</a></li>
-            <li class="nav-item"><a class="nav-link" href="approach.html">Προσέγγιση</a></li>
-            <li class="nav-item"><a class="nav-link" href="resume.html">Βιογραφικό</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Αρχική</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Υπηρεσίες</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="approach.html">Προσέγγιση</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Βιογραφικό</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -257,29 +265,32 @@
     </section>
 
     <!-- About Section -->
-    <section class="bg-white" style="padding-top: 120px; padding-bottom: 120px;">
+    <section class="bg-white" style="padding-top: 120px; padding-bottom: 120px">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2 class="mb-4 text-center" style="font-weight: 500;">Σχετικά</h2>
+            <h2 class="mb-4 text-center" style="font-weight: 500">Σχετικά</h2>
             <p style="font-size: 1.2rem; line-height: 1.8; color: #555">
-              Σε έναν κόσμο όπου οι απαιτήσεις της καθημερινότητας είναι τόσες πολλές
-              και έντονες, δεν υπάρχει συχνά χρόνος και ο χώρος  για να συνδεθούμε πραγματικά
-              με τον εαυτό μας και τους γύρω μας. 
+              Σε έναν κόσμο όπου οι απαιτήσεις της καθημερινότητας είναι τόσες
+              πολλές και έντονες, δεν υπάρχει συχνά χρόνος και ο χώρος για να
+              συνδεθούμε πραγματικά με τον εαυτό μας και τους γύρω μας.
             </p>
             <p style="font-size: 1.2rem; line-height: 1.8; color: #555">
-              Μέσα από τη διαδικασία της ψυχοθεραπείας, θα δουλέψουμε μαζί, εστιάζοντας στις
-              δικές σας εμπειρίες και ανάγκες. Στόχος μας είναι να κατανοήσουμε καλύτερα τις
-              καθημερινές σας δυσκολίες, να διαχειριστούμε τα συναισθήματά σας, να βρούμε λύσεις
-              στις συγκρούσεις και να βελτιώσουμε τον τρόπο επικοινωνίας με τους γύρω σας.
-              Μαθαίνουμε πώς να βλέπουμε με νέο μάτι τις σκέψεις μας και να αντιμετωπίζουμε πιο
-              αποτελεσματικά τις προκλήσεις της ζωής. 
+              Μέσα από τη διαδικασία της ψυχοθεραπείας, θα δουλέψουμε μαζί,
+              εστιάζοντας στις δικές σας εμπειρίες και ανάγκες. Στόχος μας είναι
+              να κατανοήσουμε καλύτερα τις καθημερινές σας δυσκολίες, να
+              διαχειριστούμε τα συναισθήματά σας, να βρούμε λύσεις στις
+              συγκρούσεις και να βελτιώσουμε τον τρόπο επικοινωνίας με τους γύρω
+              σας. Μαθαίνουμε πώς να βλέπουμε με νέο μάτι τις σκέψεις μας και να
+              αντιμετωπίζουμε πιο αποτελεσματικά τις προκλήσεις της ζωής.
             </p>
             <p style="font-size: 1.2rem; line-height: 1.8; color: #555">
-              Αξιοποιώντας τα μοντέλα της Γνωσιακής-Συμπεριφορικής Ψυχοθεραπείας αλλά και τεχνικές άλλων
-              σύγχρονων ψυχοθεραπευτικών κατευθύνσεων, μαζί, μπορούμε να χαρτογραφήσουμε, να κατανοήσουμε
-              και να τροπoποιήσουμε δυσλειτουργικά σχήματα, έτσι ώστε να αποκτήσετε καλύτερο έλεγχο της ζωής σας.
-              Να μεταμορφώσετε την όποια 'εξελικτική κρίση' σε μια 'εποικοδομητική εμπειρία'. 
+              Αξιοποιώντας τα μοντέλα της Γνωσιακής-Συμπεριφορικής Ψυχοθεραπείας
+              αλλά και τεχνικές άλλων σύγχρονων ψυχοθεραπευτικών κατευθύνσεων,
+              μαζί, μπορούμε να χαρτογραφήσουμε, να κατανοήσουμε και να
+              τροπoποιήσουμε δυσλειτουργικά σχήματα, έτσι ώστε να αποκτήσετε
+              καλύτερο έλεγχο της ζωής σας. Να μεταμορφώσετε την όποια
+              'εξελικτική κρίση' σε μια 'εποικοδομητική εμπειρία'.
             </p>
           </div>
         </div>
@@ -312,11 +323,18 @@
               Καλώς ήρθατε, είμαι η Στεφανία Δράκου
             </h2>
             <p style="font-size: 1.1rem; color: #444; line-height: 1.8">
-              Η απόφαση να αναζητήσετε θεραπεία μπορεί να είναι συναρπαστική αλλά και τρομακτική, και η εύρεση του κατάλληλου θεραπευτή για να συνεργαστείτε είναι απαραίτητη. Αναγνωρίζω τη σημασία της δημιουργίας ενός φιλόξενου και υποστηρικτικού περιβάλλοντος στο οποίο οι πελάτες μου μπορούν να μοιραστούν ανοιχτά τους αγώνες και τις χαρές τους.
+              Η απόφαση να αναζητήσετε θεραπεία μπορεί να είναι συναρπαστική
+              αλλά και τρομακτική, και η εύρεση του κατάλληλου θεραπευτή για να
+              συνεργαστείτε είναι απαραίτητη. Αναγνωρίζω τη σημασία της
+              δημιουργίας ενός φιλόξενου και υποστηρικτικού περιβάλλοντος στο
+              οποίο οι πελάτες μου μπορούν να μοιραστούν ανοιχτά τους αγώνες και
+              τις χαρές τους.
             </p>
             <p style="font-size: 1.1rem; color: #444; line-height: 1.8">
-              Δουλεύω με συνεργατικό και συμπονετικό τρόπο, προσεγγίζοντας τη θεραπεία με επαγγελματισμό και αίσθηση του χιούμορ. Σας προσκαλώ να εξερευνήσετε αυτόν τον ιστότοπο ώστε να μάθετε περισσότερα για το υπόβαθρό μου και
-              την προσέγγισή μου στη θεραπεία.
+              Δουλεύω με συνεργατικό και συμπονετικό τρόπο, προσεγγίζοντας τη
+              θεραπεία με επαγγελματισμό και αίσθηση του χιούμορ. Σας προσκαλώ
+              να εξερευνήσετε αυτόν τον ιστότοπο ώστε να μάθετε περισσότερα για
+              το υπόβαθρό μου και την προσέγγισή μου στη θεραπεία.
             </p>
             <a
               href="#about"
@@ -334,13 +352,20 @@
     </section>
 
     <!-- How I Help Section -->
-    <section id="how-i-help" style="background-color: #fff; padding: 100px 0; text-align: center;">
+    <section
+      id="how-i-help"
+      style="background-color: #fff; padding: 100px 0; text-align: center"
+    >
       <h2 class="section-title">ΠΩΣ ΜΠΟΡΩ ΝΑ ΒΟΗΘΗΣΩ</h2>
 
       <div class="container">
         <div class="row justify-content-center gap-5">
           <div class="col-md-4 col-sm-6 mb-4">
-            <img src="therapy1.jpg" alt="Individual Therapy" class="therapy-img" />
+            <img
+              src="therapy1.jpg"
+              alt="Individual Therapy"
+              class="therapy-img"
+            />
             <h3 class="therapy-heading">ΑΤΟΜΙΚΗ ΨΥΧΟΘΕΡΑΠΕΙΑ</h3>
             <p class="therapy-text">
               Βοηθώντας άτομα να βρουν περισσότερη ηρεμία, σύνδεση και νόημα.
@@ -361,64 +386,72 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer" style="background-color: #f4f1ed; padding: 40px 0; text-align: center;">
+    <footer
+      id="footer"
+      style="background-color: #f4f1ed; padding: 40px 0; text-align: center"
+    >
       <div class="container">
-        <h5 style="font-family: 'Georgia', serif; font-weight: 500; color: #6e6e7a; margin-bottom: 20px;">
+        <h5
+          style="
+            font-family: 'Georgia', serif;
+            font-weight: 500;
+            color: #6e6e7a;
+            margin-bottom: 20px;
+          "
+        >
           Επικοινωνία
         </h5>
-        <p style="color: #555; font-size: 1.05rem; margin-bottom: 8px;">
+        <p style="color: #555; font-size: 1.05rem; margin-bottom: 8px">
           📧 drakou.stef@gmail.com
-
         </p>
-        <p style="color: #555; font-size: 1.05rem;">
-          📞 +30 698 988 5396
+        <p style="color: #555; font-size: 1.05rem">📞 +30 698 988 5396</p>
+        <hr style="max-width: 200px; margin: 30px auto; border-color: #ccc" />
+        <p style="color: #aaa; font-size: 0.9rem">
+          &copy; 2025 Στεφανία Δράκου. Website by
+          <a
+            href="https://rusman.gr"
+            target="_blank"
+            style="color: #000000; text-decoration: none"
+            >Antonios Rusman</a
+          >.
         </p>
-        <hr style="max-width: 200px; margin: 30px auto; border-color: #ccc;" />
-        <p style="color: #aaa; font-size: 0.9rem;">
-          &copy; 2025 Στεφανία Δράκου. Website by 
-          <a href="https://rusman.gr" target="_blank" style="color: #000000; text-decoration: none;">Antonios Rusman</a>.
-        </p>
-
       </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-      const toggler = document.querySelector('.navbar-toggler');
-      const icon = toggler.querySelector('.navbar-toggler-icon');
-      const menu = document.getElementById('navbarNav');
+      const toggler = document.querySelector(".navbar-toggler");
+      const icon = toggler.querySelector(".navbar-toggler-icon");
+      const menu = document.getElementById("navbarNav");
 
       // Default: closed
-      icon.classList.add('white');
+      icon.classList.add("white");
 
-      toggler.addEventListener('click', () => {
-        const isOpen = menu.classList.contains('show');
+      toggler.addEventListener("click", () => {
+        const isOpen = menu.classList.contains("show");
 
         if (!isOpen) {
-          menu.classList.add('show');
-          icon.classList.remove('white');
-          icon.classList.add('black');
+          menu.classList.add("show");
+          icon.classList.remove("white");
+          icon.classList.add("black");
         } else {
-          menu.classList.remove('show');
-          icon.classList.remove('black');
-          icon.classList.add('white');
+          menu.classList.remove("show");
+          icon.classList.remove("black");
+          icon.classList.add("white");
         }
       });
 
       // Optional: close menu if you click outside of it
-      document.addEventListener('click', (e) => {
+      document.addEventListener("click", (e) => {
         if (!menu.contains(e.target) && !toggler.contains(e.target)) {
-          if (menu.classList.contains('show')) {
-            menu.classList.remove('show');
-            icon.classList.remove('black');
-            icon.classList.add('white');
+          if (menu.classList.contains("show")) {
+            menu.classList.remove("show");
+            icon.classList.remove("black");
+            icon.classList.add("white");
           }
         }
       });
     </script>
-
-
   </body>
 </html>

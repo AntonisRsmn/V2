@@ -74,12 +74,12 @@
         padding-left: 20px;
         margin-top: 10px;
         color: #555;
-    }
-        .service-box ul li {
+      }
+      .service-box ul li {
         margin-bottom: 5px;
-    }
+      }
 
-    /* Mobile-only navbar override */
+      /* Mobile-only navbar override */
       @media (max-width: 991.98px) {
         .navbar-collapse {
           position: fixed;
@@ -128,50 +128,49 @@
       }
 
       @media (max-width: 767.98px) {
-      .navbar-collapse {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 75%;
-        height: 100vh;
-        background-color: #f8f4ec; /* Updated beige */
-        padding: 2rem;
-        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-        transition: right 0.3s ease-in-out;
-        z-index: 999;
-      }
+        .navbar-collapse {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 75%;
+          height: 100vh;
+          background-color: #f8f4ec; /* Updated beige */
+          padding: 2rem;
+          box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+          transition: right 0.3s ease-in-out;
+          z-index: 999;
+        }
 
-      .navbar-collapse.show {
-        right: 0;
-      }
+        .navbar-collapse.show {
+          right: 0;
+        }
 
-      .navbar-toggler {
-        border-color: transparent;
-        z-index: 1001;
-      }
+        .navbar-toggler {
+          border-color: transparent;
+          z-index: 1001;
+        }
 
-      /* Toggler icon - default white */
-      .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        transition: background-image 0.3s ease-in-out;
-      }
+        /* Toggler icon - default white */
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          transition: background-image 0.3s ease-in-out;
+        }
 
-      /* Toggler icon - black when menu is open */
-      .navbar-collapse.show ~ .navbar-toggler .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-      }
+        /* Toggler icon - black when menu is open */
+        .navbar-collapse.show ~ .navbar-toggler .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
 
-      .navbar-nav {
-        flex-direction: column;
-        gap: 1.5rem;
-      }
+        .navbar-nav {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
 
-      .nav-link {
-        color: #333 !important;
-        font-size: 1.2rem;
+        .nav-link {
+          color: #333 !important;
+          font-size: 1.2rem;
+        }
       }
-    }
-
     </style>
   </head>
   <body>
@@ -181,136 +180,184 @@
         <a class="navbar-brand" href="index.html">Στεφανία Δράκου</a>
 
         <!-- CUSTOM TOGGLER BUTTON -->
-        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon white"></span>
         </button>
 
         <!-- CUSTOM COLLAPSIBLE MENU -->
         <div class="navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Αρχική</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Υπηρεσίες</a></li>
-            <li class="nav-item"><a class="nav-link" href="approach.html">Προσέγγιση</a></li>
-            <li class="nav-item"><a class="nav-link" href="resume.html">Βιογραφικό</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Αρχική</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Υπηρεσίες</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="approach.html">Προσέγγιση</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Βιογραφικό</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <section class="py-5">
-  <div class="container">
-    <h2 class="section-heading">Υπηρεσίες</h2>
-    <div class="row">
-      <!-- Ατομική Ψυχοθεραπεία -->
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="service-box h-100">
-          <h5>Ατομική Ψυχοθεραπεία Ενηλίκων</h5>
-          <p>
-            Η ατομική ψυχοθεραπεία είναι μια προσωπική διαδικασία που προσαρμόζεται στις ανάγκες του κάθε ατόμου. Προσφέρει έναν ασφαλή χώρο για έκφραση και κατανόηση των συναισθημάτων. Βοηθά στην αντιμετώπιση καθημερινών δυσκολιών και στην ανάπτυξη λύσεων. Ενισχύει την αυτογνωσία, την αυτοπεποίθηση και την ψυχική ισορροπία. Στόχος της είναι μια πιο ουσιαστική και ισορροπημένη ζωή.
-          </p>
+      <div class="container">
+        <h2 class="section-heading">Υπηρεσίες</h2>
+        <div class="row">
+          <!-- Ατομική Ψυχοθεραπεία -->
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="service-box h-100">
+              <h5>Ατομική Ψυχοθεραπεία Ενηλίκων</h5>
+              <p>
+                Η ατομική ψυχοθεραπεία είναι μια προσωπική διαδικασία που
+                προσαρμόζεται στις ανάγκες του κάθε ατόμου. Προσφέρει έναν
+                ασφαλή χώρο για έκφραση και κατανόηση των συναισθημάτων. Βοηθά
+                στην αντιμετώπιση καθημερινών δυσκολιών και στην ανάπτυξη
+                λύσεων. Ενισχύει την αυτογνωσία, την αυτοπεποίθηση και την
+                ψυχική ισορροπία. Στόχος της είναι μια πιο ουσιαστική και
+                ισορροπημένη ζωή.
+              </p>
+            </div>
+          </div>
+
+          <!-- Διαχείριση Εργασιακών Προκλήσεων -->
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="service-box h-100">
+              <h5>Ανάπτυξη Δεξιοτήτων Διαχείρισης Εργασιακών Προκλήσεων</h5>
+              <p>
+                Στη σύγχρονη εποχή, η εργασία επηρεάζει έντονα την ψυχική μας
+                υγεία, λόγω των υψηλών απαιτήσεων και της συνεχούς πίεσης. Αυτή
+                η υπηρεσία βοηθά στη διαχείριση του εργασιακού άγχους μέσα από
+                εξατομικευμένες συνεδρίες. Μέσα από τη θεραπεία, αναπτύσσετε
+                στρατηγικές για εξισορρόπηση επαγγελματικής και προσωπικής ζωής,
+                βελτίωση επικοινωνίας και διαχείριση συγκρούσεων. Η προσέγγιση
+                περιλαμβάνει:
+              </p>
+              <ul>
+                <li>Διαχείριση άγχους</li>
+                <li>Ενίσχυση επικοινωνίας</li>
+                <li>Επίλυση συγκρούσεων</li>
+                <li>Αυτογνωσία &amp; αυτοεκτίμηση</li>
+                <li>Ισορροπία ζωής–εργασίας</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Συμβουλευτική Γονέων -->
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="service-box h-100">
+              <h5>Συμβουλευτική Γονέων</h5>
+              <p>
+                Η σύγχρονη γονεϊκότητα συνδυάζει επαγγελματικές πιέσεις,
+                έντονους ρυθμούς και οικογενειακές απαιτήσεις, συχνά προκαλώντας
+                άγχος, εξάντληση και ενοχές. Η υπηρεσία αυτή στηρίζει τους
+                γονείς στην ενίσχυση της σχέσης με τα παιδιά τους και στη
+                διαχείριση του καθημερινού στρες. Μέσα από τη θεραπεία,
+                αναπτύσσονται πρακτικές στρατηγικές για ισορροπία και
+                συναισθηματική σύνδεση. Η προσέγγιση μπορεί να περιλαμβάνει:
+              </p>
+              <ul>
+                <li>Διαχείριση χρόνου</li>
+                <li>Αντιμετώπιση άγχους και ενοχής</li>
+                <li>Συναισθηματική σύνδεση με τα παιδιά</li>
+                <li>Αυτοφροντίδα &amp; ενδυνάμωση</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Online Συνεδρίες -->
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="service-box h-100">
+              <h5>Online Συνεδρίες</h5>
+              <p>
+                Παρέχουμε online συνεδρίες ψυχοθεραπείας, που σας επιτρέπουν να
+                επικοινωνείτε με ασφάλεια και άνεση από οποιοδήποτε μέρος
+                επιλέξετε. Η διαδικασία είναι απλή, φιλική προς τον χρήστη και
+                διασφαλίζει την εμπιστευτικότητα των συνομιλιών. Η προσέγγιση
+                της θεραπείας προσαρμόζεται πλήρως στις δικές σας ανάγκες και
+                στόχους, ώστε να έχετε μια εξατομικευμένη εμπειρία που
+                ανταποκρίνεται σε ό,τι πραγματικά χρειάζεστε. Μέσω αυτής της
+                ευέλικτης μορφής, μπορείτε να συνεχίσετε την προσωπική σας
+                ανάπτυξη χωρίς περιορισμούς χώρου και χρόνου.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Διαχείριση Εργασιακών Προκλήσεων -->
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="service-box h-100">
-          <h5>Ανάπτυξη Δεξιοτήτων Διαχείρισης Εργασιακών Προκλήσεων</h5>
-          <p>
-            Στη σύγχρονη εποχή, η εργασία επηρεάζει έντονα την ψυχική μας υγεία, λόγω των υψηλών απαιτήσεων και της συνεχούς πίεσης. Αυτή η υπηρεσία βοηθά στη διαχείριση του εργασιακού άγχους μέσα από εξατομικευμένες συνεδρίες. Μέσα από τη θεραπεία, αναπτύσσετε στρατηγικές για εξισορρόπηση επαγγελματικής και προσωπικής ζωής, βελτίωση επικοινωνίας και διαχείριση συγκρούσεων. Η προσέγγιση περιλαμβάνει:
-          </p>
-          <ul>
-            <li>Διαχείριση άγχους</li>
-            <li>Ενίσχυση επικοινωνίας</li>
-            <li>Επίλυση συγκρούσεων</li>
-            <li>Αυτογνωσία &amp; αυτοεκτίμηση</li>
-            <li>Ισορροπία ζωής–εργασίας</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Συμβουλευτική Γονέων -->
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="service-box h-100">
-          <h5>Συμβουλευτική Γονέων</h5>
-          <p>
-            Η σύγχρονη γονεϊκότητα συνδυάζει επαγγελματικές πιέσεις, έντονους ρυθμούς και οικογενειακές απαιτήσεις, συχνά προκαλώντας άγχος, εξάντληση και ενοχές. Η υπηρεσία αυτή στηρίζει τους γονείς στην ενίσχυση της σχέσης με τα παιδιά τους και στη διαχείριση του καθημερινού στρες. Μέσα από τη θεραπεία, αναπτύσσονται πρακτικές στρατηγικές για ισορροπία και συναισθηματική σύνδεση. Η προσέγγιση μπορεί να περιλαμβάνει:
-          </p>
-          <ul>
-            <li>Διαχείριση χρόνου</li>
-            <li>Αντιμετώπιση άγχους και ενοχής</li>
-            <li>Συναισθηματική σύνδεση με τα παιδιά</li>
-            <li>Αυτοφροντίδα &amp; ενδυνάμωση</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Online Συνεδρίες -->
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="service-box h-100">
-          <h5>Online Συνεδρίες</h5>
-          <p>
-            Παρέχουμε online συνεδρίες ψυχοθεραπείας, που σας επιτρέπουν να επικοινωνείτε με ασφάλεια και άνεση από οποιοδήποτε μέρος επιλέξετε. Η διαδικασία είναι απλή, φιλική προς τον χρήστη και διασφαλίζει την εμπιστευτικότητα των συνομιλιών. Η προσέγγιση της θεραπείας προσαρμόζεται πλήρως στις δικές σας ανάγκες και στόχους, ώστε να έχετε μια εξατομικευμένη εμπειρία που ανταποκρίνεται σε ό,τι πραγματικά χρειάζεστε. Μέσω αυτής της ευέλικτης μορφής, μπορείτε να συνεχίσετε την προσωπική σας ανάπτυξη χωρίς περιορισμούς χώρου και χρόνου.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Footer -->
-    <footer id="footer" style="background-color: #f4f1ed; padding: 40px 0; text-align: center;">
+    <footer
+      id="footer"
+      style="background-color: #f4f1ed; padding: 40px 0; text-align: center"
+    >
       <div class="container">
-        <h5 style="font-family: 'Georgia', serif; font-weight: 500; color: #6e6e7a; margin-bottom: 20px;">
+        <h5
+          style="
+            font-family: 'Georgia', serif;
+            font-weight: 500;
+            color: #6e6e7a;
+            margin-bottom: 20px;
+          "
+        >
           Επικοινωνία
         </h5>
-        <p style="color: #555; font-size: 1.05rem; margin-bottom: 8px;">
+        <p style="color: #555; font-size: 1.05rem; margin-bottom: 8px">
           📧 drakou.stef@gmail.com
-
         </p>
-        <p style="color: #555; font-size: 1.05rem;">
-          📞 +30 698 988 5396
+        <p style="color: #555; font-size: 1.05rem">📞 +30 698 988 5396</p>
+        <hr style="max-width: 200px; margin: 30px auto; border-color: #ccc" />
+        <p style="color: #aaa; font-size: 0.9rem">
+          &copy; 2025 Στεφανία Δράκου. Website by
+          <a
+            href="https://rusman.gr"
+            target="_blank"
+            style="color: #000000; text-decoration: none"
+            >Antonios Rusman</a
+          >.
         </p>
-        <hr style="max-width: 200px; margin: 30px auto; border-color: #ccc;" />
-        <p style="color: #aaa; font-size: 0.9rem;">
-  &copy; 2025 Στεφανία Δράκου. Website by 
-  <a href="https://rusman.gr" target="_blank" style="color: #000000; text-decoration: none;">Antonios Rusman</a>.
-</p>
-
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-      const toggler = document.querySelector('.navbar-toggler');
-      const icon = toggler.querySelector('.navbar-toggler-icon');
-      const menu = document.getElementById('navbarNav');
+      const toggler = document.querySelector(".navbar-toggler");
+      const icon = toggler.querySelector(".navbar-toggler-icon");
+      const menu = document.getElementById("navbarNav");
 
       // Default: closed
-      icon.classList.add('black');
+      icon.classList.add("black");
 
-      toggler.addEventListener('click', () => {
-        const isOpen = menu.classList.contains('show');
+      toggler.addEventListener("click", () => {
+        const isOpen = menu.classList.contains("show");
 
         if (!isOpen) {
-          menu.classList.add('show');
-          icon.classList.remove('black');
-          icon.classList.add('black');
+          menu.classList.add("show");
+          icon.classList.remove("black");
+          icon.classList.add("black");
         } else {
-          menu.classList.remove('show');
-          icon.classList.remove('black');
-          icon.classList.add('black');
+          menu.classList.remove("show");
+          icon.classList.remove("black");
+          icon.classList.add("black");
         }
       });
 
       // Optional: close menu if you click outside of it
-      document.addEventListener('click', (e) => {
+      document.addEventListener("click", (e) => {
         if (!menu.contains(e.target) && !toggler.contains(e.target)) {
-          if (menu.classList.contains('show')) {
-            menu.classList.remove('show');
-            icon.classList.remove('black');
-            icon.classList.add('black');
+          if (menu.classList.contains("show")) {
+            menu.classList.remove("show");
+            icon.classList.remove("black");
+            icon.classList.add("black");
           }
         }
       });
