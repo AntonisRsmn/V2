@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="cv-photo.webp">
+    <title>Στεφανία Δράκου</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: "Georgia", serif;
+      }
+
+      .hero-section {
+        background-image: url("bg.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 15px;
+        position: relative; /* Required for the overlay */
+        z-index: 1;
+      }
+
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3); /* Adjust the 0.5 to control darkness */
+        z-index: -1;
+      }
+
+
+      .navbar-custom {
+        background: transparent;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .navbar-custom .nav-link,
+      .navbar-custom .navbar-brand {
+        color: white;
+        font-weight: 500;
+      }
+
+      .hero-section h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.15em;
+      }
+
+      .hero-section p {
+        font-size: 1.2rem;
+        margin-top: 20px;
+      }
+
+      @media (min-width: 768px) {
+        .hero-section h1 {
+          font-size: 3.5rem;
+        }
+
+        .hero-section p {
+          font-size: 1.5rem;
+        }
+      }
+
+      .section-title {
+        font-weight: 600;
+        margin-bottom: 50px;
+        color: #000000;
+        font-size: 1.2rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .therapy-img {
+        width: 250px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 125px 125px 0px 0px;
+        margin: 0 auto 20px;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+        display: block;
+      }
+
+      .therapy-heading {
+        font-weight: 500;
+        font-size: 1.25rem;
+        letter-spacing: 0.1em;
+        color: #6e6e7a;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+      }
+
+      .therapy-text {
+        font-size: 0.95rem;
+        color: #999;
+        max-width: 280px;
+        margin: 0 auto 15px;
+        line-height: 1.6;
+      }
+
+      .therapy-link {
+        color: #b68263;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .therapy-link:hover {
+        text-decoration: underline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Στεφανία Δράκου</a>
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Αρχική</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Υπηρεσίες</a></li>
+            <li class="nav-item"><a class="nav-link" href="approach.html">Προσέγγιση</a></li>
+            <li class="nav-item"><a class="nav-link" href="resume.html">Βιογραφικό</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">Επικοινωνία</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1>ΠΡΟΟΠΤΙΚΗ · ΟΡΑΤΙΚΗ · ΑΛΛΑΓΗ</h1>
+      <p>
+        Βρείτε μεγαλύτερη ειρήνη.<br />
+        Νιώστε πιο συνδεδεμένοι.<br />
+        Ζήστε πιο ουσιαστικά.
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-white" style="padding-top: 120px; padding-bottom: 120px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="mb-4 text-center" style="font-weight: 500;">Σχετικά</h2>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #555">
+              Σε έναν κόσμο όπου οι απαιτήσεις της καθημερινότητας είναι τόσες πολλές
+              και έντονες, δεν υπάρχει συχνά χρόνος και ο χώρος  για να συνδεθούμε πραγματικά
+              με τον εαυτό μας και τους γύρω μας. 
+            </p>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #555">
+              Μέσα από τη διαδικασία της ψυχοθεραπείας, θα δουλέψουμε μαζί, εστιάζοντας στις
+              δικές σας εμπειρίες και ανάγκες. Στόχος μας είναι να κατανοήσουμε καλύτερα τις
+              καθημερινές σας δυσκολίες, να διαχειριστούμε τα συναισθήματά σας, να βρούμε λύσεις
+              στις συγκρούσεις και να βελτιώσουμε τον τρόπο επικοινωνίας με τους γύρω σας.
+              Μαθαίνουμε πώς να βλέπουμε με νέο μάτι τις σκέψεις μας και να αντιμετωπίζουμε πιο
+              αποτελεσματικά τις προκλήσεις της ζωής. 
+            </p>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #555">
+              Αξιοποιώντας τα μοντέλα της Γνωσιακής-Συμπεριφορικής Ψυχοθεραπείας αλλά και τεχνικές άλλων
+              σύγχρονων ψυχοθεραπευτικών κατευθύνσεων, μαζί, μπορούμε να χαρτογραφήσουμε, να κατανοήσουμε
+              και να τροπoποιήσουμε δυσλειτουργικά σχήματα, έτσι ώστε να αποκτήσετε καλύτερο έλεγχο της ζωής σας.
+              Να μεταμορφώσετε την όποια 'εξελικτική κρίση' σε μια 'εποικοδομητική εμπειρία'. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Dhruvi Section -->
+    <section class="py-5" style="background-color: #f4f1ed">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image -->
+          <div class="col-md-5 text-center mb-4 mb-md-0">
+            <img
+              src="cv-photo.webp"
+              alt="Dhruvi"
+              class="img-fluid"
+              style="border-radius: 2rem; max-height: 500px"
+            />
+          </div>
+
+          <!-- Text -->
+          <div class="col-md-7">
+            <h2
+              style="
+                font-family: 'Georgia', cursive;
+                font-weight: 400;
+                margin-bottom: 20px;
+              "
+            >
+              Καλώς ήρθατε, είμαι η Στεφανία Δράκου
+            </h2>
+            <p style="font-size: 1.1rem; color: #444; line-height: 1.8">
+              Η απόφαση να αναζητήσετε θεραπεία μπορεί να είναι συναρπαστική αλλά και τρομακτική, και η εύρεση του κατάλληλου θεραπευτή για να συνεργαστείτε είναι απαραίτητη. Αναγνωρίζω τη σημασία της δημιουργίας ενός φιλόξενου και υποστηρικτικού περιβάλλοντος στο οποίο οι πελάτες μου μπορούν να μοιραστούν ανοιχτά τους αγώνες και τις χαρές τους.
+            </p>
+            <p style="font-size: 1.1rem; color: #444; line-height: 1.8">
+              Δουλεύω με συνεργατικό και συμπονετικό τρόπο, προσεγγίζοντας τη θεραπεία με επαγγελματισμό και αίσθηση του χιούμορ. Σας προσκαλώ να εξερευνήσετε αυτόν τον ιστότοπο ώστε να μάθετε περισσότερα για το υπόβαθρό μου και
+              την προσέγγισή μου στη θεραπεία.
+            </p>
+            <a
+              href="#about"
+              style="
+                color: #b68263;
+                font-weight: 500;
+                font-size: 1.05rem;
+                text-decoration: none;
+              "
+              >Για μένα</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How I Help Section -->
+    <section id="how-i-help" style="background-color: #fff; padding: 100px 0; text-align: center;">
+      <h2 class="section-title">ΠΩΣ ΜΠΟΡΩ ΝΑ ΒΟΗΘΗΣΩ</h2>
+
+      <div class="container">
+        <div class="row justify-content-center gap-5">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="therapy1.jpg" alt="Individual Therapy" class="therapy-img" />
+            <h3 class="therapy-heading">ΑΤΟΜΙΚΗ ΨΥΧΟΘΕΡΑΠΕΙΑ</h3>
+            <p class="therapy-text">
+              Βοηθώντας άτομα να βρουν περισσότερη ηρεμία, σύνδεση και νόημα.
+            </p>
+            <a href="#" class="therapy-link">Μάθετε περισσότερα</a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img src="therapy2.jpg" alt="Couples Therapy" class="therapy-img" />
+            <h3 class="therapy-heading">ΘΕΡΑΠΕΙΑ ΖΕΥΓΑΡΙΩΝ</h3>
+            <p class="therapy-text">
+              Βοηθώντας ζευγάρια να καλλιεργήσουν ουσιαστική σύνδεση και χαρά.
+            </p>
+            <a href="#" class="therapy-link">Μάθετε περισσότερα</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" style="background-color: #f4f1ed; padding: 40px 0; text-align: center;">
+      <div class="container">
+        <h5 style="font-family: 'Georgia', serif; font-weight: 500; color: #6e6e7a; margin-bottom: 20px;">
+          Επικοινωνία
+        </h5>
+        <p style="color: #555; font-size: 1.05rem; margin-bottom: 8px;">
+          📧 drakou.stef@gmail.com
+
+        </p>
+        <p style="color: #555; font-size: 1.05rem;">
+          📞 +30 698 988 5396
+        </p>
+        <hr style="max-width: 200px; margin: 30px auto; border-color: #ccc;" />
+        <p style="color: #aaa; font-size: 0.9rem;">
+  &copy; 2025 Στεφανία Δράκου. Website by 
+  <a href="https://rusman.gr" target="_blank" style="color: #000000; text-decoration: none;">Antonios Rusman</a>.
+</p>
+
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
