@@ -172,6 +172,208 @@
           color: #333 !important;
           font-size: 1.2rem;
         }
+
+      }
+
+      .hero-section {
+        background-image: url("dafuck.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 75vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 15px;
+        position: relative; /* Required for the overlay */
+        z-index: 1;
+      }
+
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3); /* Adjust the 0.5 to control darkness */
+        z-index: -1;
+      }
+
+      .navbar-custom {
+        background: transparent;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .navbar-custom .nav-link,
+      .navbar-custom .navbar-brand {
+        color: white;
+        font-weight: 500;
+      }
+
+      .hero-section h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.15em;
+      }
+
+      .hero-section p {
+        font-size: 1.2rem;
+        margin-top: 20px;
+      }
+
+      @media (min-width: 768px) {
+        .hero-section h1 {
+          font-size: 3.5rem;
+        }
+
+        .hero-section p {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .navbar-collapse {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 75%;
+          height: 100vh;
+          background-color: #f8f4ec; /* Updated beige */
+          padding: 2rem;
+          box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+          transition: right 0.3s ease-in-out;
+          z-index: 999;
+        }
+
+        .navbar-collapse.show {
+          right: 0;
+        }
+
+        .navbar-toggler {
+          border-color: transparent;
+          z-index: 1001;
+        }
+
+        /* Toggler icon - default white */
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          transition: background-image 0.3s ease-in-out;
+        }
+
+        /* Toggler icon - black when menu is open */
+        .navbar-collapse.show ~ .navbar-toggler .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .navbar-nav {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+
+        .nav-link {
+          color: #333 !important;
+          font-size: 1.2rem;
+        }
+      }
+
+      .section-title {
+        font-weight: 600;
+        margin-bottom: 50px;
+        color: #000000;
+        font-size: 1.2rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .therapy-img {
+        width: 250px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 125px 125px 0px 0px;
+        margin: 0 auto 20px;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+        display: block;
+      }
+
+      .therapy-heading {
+        font-weight: 500;
+        font-size: 1.25rem;
+        letter-spacing: 0.1em;
+        color: #6e6e7a;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+      }
+
+      .therapy-text {
+        font-size: 0.95rem;
+        color: #999;
+        max-width: 280px;
+        margin: 0 auto 15px;
+        line-height: 1.6;
+      }
+
+      .therapy-link {
+        color: #b68263;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .therapy-link:hover {
+        text-decoration: underline;
+      }
+
+      /* Mobile-only navbar override */
+      @media (max-width: 991.98px) {
+        .navbar-collapse {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          height: 100vh;
+          width: 75%;
+          background-color: #f8f4ec;
+          padding: 2rem;
+          transition: right 0.3s ease;
+          z-index: 999;
+          box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-collapse.show {
+          right: 0;
+        }
+
+        .nav-link {
+          color: #222 !important;
+        }
+
+        .navbar-toggler {
+          z-index: 1000;
+          border: none;
+          background: none;
+        }
+
+        .navbar-toggler-icon {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transition: background-image 0.3s;
+        }
+
+        .navbar-toggler-icon.white {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .navbar-toggler-icon.black {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
       }
     </style>
   </head>
@@ -210,8 +412,23 @@
       </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="hero-section">
+
+      <h1>
+        Η ΠΡΟΣΕΓΓΙΣΗ ΜΟΥ
+      </h1>
+
+      <!-- <h1>ΠΡΟΟΠΤΙΚΗ · ΟΡΑΤΙΚΗ · ΑΛΛΑΓΗ</h1>
+      <p>
+        Βρείτε μεγαλύτερη ειρήνη.<br />
+        Νιώστε πιο συνδεδεμένοι.<br />
+        Ζήστε πιο ουσιαστικά.
+      </p> -->
+    </section>
+
     <section class="container py-5">
-      <h2 class="section-heading">Η Προσέγγισή Μου</h2>
+      <h2 class="section-heading"></h2>
 
       <div class="service-box">
         <h5>
