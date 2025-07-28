@@ -166,7 +166,7 @@
         font-size: 0.9rem;
       }
 
-      .therapy-link:hover {
+      .therapy-link:hover, .nav-link:hover, .forme:hover {
         text-decoration: underline;
       }
 
@@ -223,6 +223,33 @@
         }
       }
 
+      .call-btn {
+        background-color: transparent;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 0.75rem;
+        padding: 0.4rem 1rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: all 0.25s ease-in-out;
+      }
+
+      .call-btn:hover {
+        background-color: #ffffff;
+        color: #333;
+      }
+
+      .forme {
+        color: #b68263;
+        font-weight: 500;
+        font-size: 1.05rem;
+        text-decoration: none;
+      }
+
+      .forme:hover {
+        text-decoration: underline;
+      }
+
     </style>
   </head>
   <body>
@@ -236,7 +263,7 @@
     </a>
 
     <!-- Toggler (πάνω δεξιά στο mobile) -->
-    <button class="navbar-toggler position-absolute top-0 end-0 mt-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler position-absolute top-0 end-0 mt-4 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon white"></span>
     </button>
 
@@ -259,12 +286,12 @@
     </div>
 
     <!-- Call Button -->
-    <a href="tel:+306989885396" class="btn btn-sm btn-light text-dark ms-md-3 d-none d-md-inline-block">Καλέστε Μας</a>
+    <a href="tel:+306989885396" class="btn call-btn d-none d-md-inline-block">Καλέστε Μας</a>
   </div>
 
 <!-- Call Button (mobile, centered under logo) -->
 <div class="d-md-none w-100 text-center mt-2">
-  <a href="tel:+306989885396" class="btn btn-light text-dark">
+  <a href="tel:+306989885396" class="btn call-btn">
     Καλέστε Μας
   </a>
 </div>
@@ -318,7 +345,7 @@
       </div>
     </section>
 
-    <!-- Meet Dhruvi Section -->
+    <!-- Meet Me -->
     <section class="py-5" style="background-color: #f4f1ed">
       <div class="container">
         <div class="row align-items-center">
@@ -357,12 +384,7 @@
             </p>
             <a
               href="/resume"
-              style="
-                color: #b68263;
-                font-weight: 500;
-                font-size: 1.05rem;
-                text-decoration: none;
-              "
+              class="forme"
               >Για μένα</a
             >
           </div>
